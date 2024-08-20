@@ -15,7 +15,8 @@ const items = computed(() => {
     var array = data.value;
     var defaultData = { type: 'subheader', title: 'Список созданных вебхуков' };
     result.push(defaultData);
-    if (array.length) {
+    
+    if (array) {
         for (var i = 0; i < array.length; i++) {
             result.push({
                 title: array[i].event_name + "_id: " + array[i].id + " " + array[i].created_at,

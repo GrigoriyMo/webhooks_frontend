@@ -2,11 +2,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  routeRules: {
-    '/create': {
-        proxy: { to: "http://localhost:3001/create" },
-     },
-},
+
   runtimeConfig: {
     baseApiUrl: 'BASE_API_URL'
   },

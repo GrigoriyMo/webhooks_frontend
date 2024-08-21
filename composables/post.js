@@ -1,4 +1,5 @@
-import { defu } from 'defu'
+import defu from 'defu';
+
 
 export function postToBackend(url = '', data, options = {}) {
     

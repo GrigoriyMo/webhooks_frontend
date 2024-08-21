@@ -3,7 +3,7 @@ import { defu } from 'defu'
 export function postToBackend(url = '', data, options = {}) {
     
     const defaults = {
-        baseURL: "http://localhost:3001",
+        baseURL: "http://127.0.0.1:3001",
         // cache request
         key: url,
         method: 'POST',

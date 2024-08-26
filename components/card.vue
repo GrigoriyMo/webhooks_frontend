@@ -36,13 +36,14 @@ const props = defineProps({
     eventType: String
 })
 
+
 function postData() {
     var payload = {
         "data": {
-            "event_name": props.eventType.value
+            "event_name": props.eventType
         }
     }
-
+    console.log(payload);
     postToBackend('/create', payload)
 }
 

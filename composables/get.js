@@ -4,7 +4,7 @@ import defu from 'defu';
 export function useApi(url = '', options = {}) {
 
     const defaults = {
-        baseURL: "http://127.0.0.1:3001",
+        baseURL: "https://bezdata.ru",
         // cache request
         key: url,
 

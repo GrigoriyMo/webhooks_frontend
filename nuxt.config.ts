@@ -7,8 +7,8 @@ export default defineNuxtConfig({
     baseApiUrl: 'BASE_API_URL'
   },
   routeRules: {
-    // Homepage pre-rendered at build time
-    '/webhooks': { swr: 60 },
+    
+    '/webhooks': { cache: { maxAge: 60 * 60 } },
 
   },
   devtools: { enabled: true },

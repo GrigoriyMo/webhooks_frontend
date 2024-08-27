@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   runtimeConfig: {
     baseApiUrl: 'BASE_API_URL'
   },
+  routeRules: {
+    // Homepage pre-rendered at build time
+    '/webhooks': { swr: 60 },
+
+  },
   devtools: { enabled: true },
   build: {
     transpile: ['vuetify'],

@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <div class="flex">
 
-      <List  />
-    </div>
+  <div class="flex">
+
+    <List />
   </div>
+
 </template>
 
 <script lang="ts" setup>
